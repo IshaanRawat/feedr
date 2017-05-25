@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+        <script src="scripts/react.js"></script>
+        <script src="scripts/react-dom.js"></script>
+        <script src="scripts/babel.js"></script>
+        <script src="scripts/jquery.js"></script>
+    </head>
+    <body id="feeds">
+        <header>
+            <nav>
+                <div id="topics">
+                    <h2>Topics</h2>
+                        <ul id="topics-list">
+                            <li><a href="#">General</a>
+                                <ul class="subtopics-list">
+                                    <li class="abc-news-au"><a href="">ABC News</a></li>
+                                    <li class="associated-press"><a href="">Associated Press</a></li>
+                                    <li class="bbc-news"><a href="">BBC News</a></li>
+                                    <li class="cnn"><a href="">CNN</a></li>
+                                    <li class="focus"><a href="">Focus</a></li>
+                                    <li class="independent"><a href="">Independent</a></li>
+                                    <li class="metro"><a href="">Metro</a></li>
+                                    <li class="mirror"><a href="">Mirror</a></li>
+                                    <li class="newsweek"><a href="">Newsweek</a></li>
+                                    <li class="reddit-r-all"><a href="">Reddit</a></li>
+                                    <li class="retuers"><a href="">Reuters</a></li>
+                                    <li class="sky-news"><a href="">Sky News</a></li>
+                                    <li class="the-guardian"><a href="">The Guardian</a></li>
+                                    <li class="the-hindu"><a href="">The Hindu</a></li>
+                                    <li class="the-huffington-post"><a href="">The Huffington Post</a></li>
+                                    <li class="the-new-york-times"><a href="">The New York Times</a></li>
+                                    <li class="the-washington-post"><a href="">The Washington Post</a></li>
+                                    <li class="time"><a href="">Time</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Business</a>
+                                <ul class="subtopics-list">
+                                    <li class="bloomberg"><a href="">Blomberg</a></li>
+                                    <li class="business-insider"><a href="">Business Insider</a></li>
+                                    <li class="cnbc"><a href="">CNBC</a></li>
+                                    <li class="financial-times"><a href="">Financial Times</a></li>
+                                    <li class="fortune"><a href="">Fortune</a></li>
+                                    <li class="the-economist"><a href="">The Economist</a></li>
+                                    <li class="the-wall-street-journal"><a href="">The Wall Street Journal</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Entertainment</a>
+                                <ul class="subtopics-list">
+                                    <li class="buzzfeed"><a href="">Buzzfeed</a></li>
+                                    <li class="daily-mail"><a href="">Daily Mail</a></li>
+                                    <li class="entertainment-weekly"><a href="">Entertainment Weekly</a></li>
+                                    <li class="mashable"><a href="">Mashable</a></li>
+                                    <li class="the-lad-bible"><a href="">The Lad Bible</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Gaming</a>
+                                <ul class="subtopics-list">
+                                    <li class="ign"><a href="">IGN</a></li>
+                                    <li class="polygon"><a href="">Polygon</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Music</a>
+                                <ul class="subtopics-list">
+                                    <li class="mtv-news"><a href="">MTV News</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Science and Nature</a>
+                                <ul class="subtopics-list">
+                                    <li class="national-geographic"><a href="">National Geographic</a></li>
+                                    <li class="new-scientist"><a href="">New Scientist</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Sport</a>
+                                <ul class="subtopics-list">
+                                    <li class="bbc-sport"><a href="">BBC Sport</a></li>
+                                    <li class="espn"><a href="">ESPN</a></li>
+                                    <li class="espn-cric-info"><a href="">ESPN Cric Info</a></li>
+                                    <li class="football-italia"><a href="">Football Italia</a></li>
+                                    <li class="four-four-two"><a href="">FourFourTwo</a></li>
+                                    <li class="fox-sports"><a href="">Fox Sports</a></li>
+                                    <li class="nfl-news"><a href="">NFL News</a></li>
+                                    <li class="sky-sports-news"><a href="">Sky Sports News</a></li>
+                                    <li class="talksport"><a href="">TalkSport</a></li>
+                                    <li class="the-sport-bible"><a href="">The Sport Bible</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Technology</a>
+                                <ul class="subtopics-list">
+                                    <li class="ars-technica"><a href="">Ars Technica</a></li>
+                                    <li class="engadget"><a href="">Engadget</a></li>
+                                    <li class="google-news"><a href="">Google News</a></li>
+                                    <li class="Gruenderzene"><a href="">Gruenderszene</a></li>
+                                    <li class="hacker-news"><a href="">Hacker News</a></li>
+                                    <li class="recode"><a href="">Recode</a></li>
+                                    <li class="t3n"><a href="">T3n</a></li>
+                                    <li class="the-next-web"><a href="">The Next Web</a></li>
+                                    <li class="the-verge"><a href="">The Verge</a></li>
+                                    <li class="wired-de"><a href="">Wired.de</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <h2><a href="about.html">About Feedr</a></h2>
+                </div>
+            </nav>
+            <div class="bag">
+                <div class="chain">
+                    <div class="one pocket">
+                        <span id="nav-control"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="ten pockets">
+                        <div id="logo"><a href="#">Feedr</a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="bag" id="post-area">
+                <img src="images/topic.png" alt="">
+            </div>
+        </section>
+        <script type="text/babel" src="scripts/scripts.js"></script>
+        <script src="https://use.fontawesome.com/658e26290a.js"></script>
+        <script type="text/javascript">
+            $("#nav-control").on('click', function(event) {
+
+                $(this).toggleClass('is-active');
+                event.preventDefault();
+                if ($(this).hasClass('is-active')) {
+                    $("nav").css('width', '250px');
+                    $(this).html("<i class='fa fa-close' aria-hidden='true'></i>");
+                } else {
+                    $("nav").css('width', '0px');
+                    $(this).html("<i class='fa fa-bars' aria-hidden='true'></i>");
+                }
+            });
+            $("#topics-list>li").click(function(event) {
+                /* Act on the event */
+                event.preventDefault();
+                $(this).children('ul').slideToggle('slow');
+            });
+        </script>
+    </body>
+</html>
